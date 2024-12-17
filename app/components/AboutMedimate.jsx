@@ -1,7 +1,7 @@
 const AboutMedimate = () => {
   return (
     <section className="bg-pink-100 py-10">
-     <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
+     <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 max-w-7xl">
      <div className="grid grid-cols-1 md:grid-cols-10 gap-20 items-center">
         {/* Image Section - 3 Columns */}
         <div className="col-span-1 md:col-span-3">

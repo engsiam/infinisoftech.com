@@ -9,7 +9,7 @@ const Header = () => {
 
   return (
     <header className="bg-pink-500 text-white">
-      <div className="container mx-auto flex items-center justify-between py-4 px-4 md:px-8">
+      <div className="max-w-7xl mx-auto flex items-center justify-between py-4 px-4 md:px-8">
         {/* Left Div: Logo */}
         <div className="flex items-center">
          <Link href="/" >

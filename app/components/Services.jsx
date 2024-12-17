@@ -2,7 +2,7 @@
 
 const Services = () => {
   return (
-    <section className="bg-white py-10">
+    <section className="bg-white py-10 max-w-7xl mx-auto">
     <div className="container mx-auto px-4 text-center">
       {/* Section Heading */}
       <h2 className="text-3xl md:text-4xl font-bold text-pink-700 mb-2">
