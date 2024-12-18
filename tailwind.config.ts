@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
   	extend: {
   		colors: {
-  			background: 'var(--background)',
+  			primary:"#C1426D",
   			foreground: 'var(--foreground)'
   		},
   		borderRadius: {

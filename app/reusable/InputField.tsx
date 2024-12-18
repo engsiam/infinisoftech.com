@@ -1,20 +1,28 @@
 "use client";
 
+import { InputHTMLAttributes, TextareaHTMLAttributes, SelectHTMLAttributes } from "react";
+
 interface InputFieldProps {
   label?: string; // Optional label
-  type: "text" | "textarea" | "select" | "email"; // Type options
-  placeholder?: string;
-  name: string;
-  options?: { value: string; label: string }[]; // Dropdown options
+  type: "text" | "textarea" | "select" | "email"; // Supported types
+  placeholder?: string; // Placeholder text
+  name: string; // Input name
+  options?: { value: string; label: string }[]; // Dropdown options for select
 }
 
-const InputField: React.FC<InputFieldProps> = ({
+// Merge input attributes for reusability
+type NativeInputProps = InputHTMLAttributes<HTMLInputElement>;
+type NativeTextareaProps = TextareaHTMLAttributes<HTMLTextAreaElement>;
+type NativeSelectProps = SelectHTMLAttributes<HTMLSelectElement>;
+
+const InputField = ({
   label,
   type,
   placeholder,
   name,
   options,
-}) => {
+  ...rest
+}: InputFieldProps & NativeInputProps & NativeTextareaProps & NativeSelectProps) => {
   return (
     <div className="w-full">
       {label && (
@@ -22,20 +30,27 @@ const InputField: React.FC<InputFieldProps> = ({
           {label}
         </label>
       )}
-      {type === "textarea" ? (
+
+      {/* Render a textarea */}
+      {type === "textarea" && (
         <textarea
           id={name}
           name={name}
           placeholder={placeholder}
           className="w-full h-[120px] border border-gray-300 px-3 py-2 rounded-md focus:outline-pink-600 text-[#737373]"
+          {...rest}
         />
-      ) : type === "select" && options ? (
+      )}
+
+      {/* Render a select dropdown */}
+      {type === "select" && options && (
         <select
           id={name}
           name={name}
           className="w-full border border-gray-300 px-3 py-2 rounded-md focus:outline-pink-600 text-[#737373]"
+          {...rest}
         >
-          <option value="" disabled selected>
+          <option value="" disabled>
             {placeholder || "Please Select"}
           </option>
           {options.map((option) => (
@@ -44,13 +59,17 @@ const InputField: React.FC<InputFieldProps> = ({
             </option>
           ))}
         </select>
-      ) : (
+      )}
+
+      {/* Render an input field */}
+      {type !== "textarea" && type !== "select" && (
         <input
           id={name}
           type={type}
           name={name}
           placeholder={placeholder}
           className="w-full border border-gray-300 px-3 py-2 rounded-md focus:outline-pink-600 text-[#737373]"
+          {...rest}
         />
       )}
     </div>
