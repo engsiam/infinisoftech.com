@@ -1,16 +1,15 @@
-import HowMediMate from "./components/HowMediMate";
-import Hero from "./components/Hero";
-import Services from "./components/Services";
-import AboutMedimate from "./components/AboutMedimate";
+import AboutMedimate from "./components/AboutMediMate";
 import AppSection from "./components/AppSection";
+import Hero from "./components/Hero";
+import HowMediMate from "./components/HowMediMate";
 
 export default function Home() {
   return (
     <div className="">
       <Hero />
       <HowMediMate />
-      <AboutMedimate/>
-      <AppSection/>
+      <AboutMedimate />
+      <AppSection />
       {/* <Services /> */}
     </div>
   );
