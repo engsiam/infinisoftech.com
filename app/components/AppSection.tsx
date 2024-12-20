@@ -6,7 +6,7 @@ export default function AppSection() {
   return (
     <section className="py-16 md:py-24 lg:px-16 px-0">
       <div className="bg-[#C1426D] rounded-lg pt-12 lg:pt-0">
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 px-6 lg:px-12">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 px-6 lg:px-0">
           {/* Left Content */}
           <div className="w-full text-center lg:text-left lg:w-1/2 space-y-6">
             <h3 className="text-white text-xl font-medium">
