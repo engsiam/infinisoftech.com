@@ -1,12 +1,12 @@
 "use client";
 
+import Card from "@/reusable/card";
 import {
   CalendarIcon,
   ClipboardDocumentCheckIcon,
   MagnifyingGlassIcon,
 } from "@heroicons/react/24/solid";
 import Image from "next/image";
-import Card from "@/reusable/card";
 
 // Card data array
 const cardData = [
@@ -49,9 +49,10 @@ const HowMediMate = () => {
           <Image
             src="/assets/images/women.png"
             alt="Doctor"
-            width={300}
-            height={300}
-            className="w-full"
+            width={350}
+            height={0}
+            sizes="100vh"
+            style={{ height: "auto" }}
           />
         </div>
 

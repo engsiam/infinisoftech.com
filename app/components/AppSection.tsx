@@ -5,10 +5,10 @@ import Image from "next/image";
 export default function AppSection() {
   return (
     <section className="py-16 md:py-24 lg:px-16 px-0">
-      <div className="bg-[#C1426D] rounded-lg pt-12 lg:pt-0">
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 px-6 lg:px-0">
+      <div className="bg-[#C1426D] md:rounded-lg pt-12 px-4">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-12 px-6 lg:px-0">
           {/* Left Content */}
-          <div className="w-full text-center lg:text-left lg:w-1/2 space-y-6">
+          <div className="lg:text-left lg:w-1/2 space-y-6 flex flex-col justify-center">
             <h3 className="text-white text-xl font-medium">
               Working for Your Better Health.
             </h3>
@@ -50,12 +50,15 @@ export default function AppSection() {
           </div>
 
           {/* Right Content: App Mockup Images */}
-          <div className="w-full flex justify-center lg:justify-end lg:w-1/2 mt-10">
-            <div className="relative w-full h-[480px] md:w-[300px] md:h-[600px] lg:w-[585px] lg:h-[600px]">
+          <div className="w-full flex justify-center lg:justify-end lg:w-1/2 mt-10 relative">
+            <div className="">
               <Image
                 src="/assets/images/mobile-app.png"
                 alt="App Screen 1"
-                fill
+                width={565}
+                height={0}
+                sizes="100vw"
+                style={{ height: "auto" }}
               />
             </div>
           </div>

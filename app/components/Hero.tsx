@@ -12,12 +12,13 @@ export default function HeroSection() {
         {/* Left Content */}
         <div className="flex flex-col justify-center text-center lg:text-left">
           <h1 className="text-3xl lg:text-4xl font-bold text-primary mb-4 mt-20 md:mt-0">
-            স্তন ক্যান্সার চিকিৎসায় সহজ সমাধান!
+            স্তন ক্যান্সার চিকিৎসায় <br className="hidden sm:block" /> সহজ
+            সমাধান!
           </h1>
-          <p className="text-primary mb-6 leading-relaxed">
+          <p className="text-primary mb-6 leading-relaxed font-bold">
             বিশেষজ্ঞদের সাথে সরাসরি যোগাযোগ করুন
           </p>
-          <p className="text-primary mb-6 leading-relaxed">
+          <p className="text-primary mb-6 leading-relaxed ">
             দেশের যেকোনো প্রান্ত থেকে বিশেষজ্ঞ ডাক্তারদের কাছে দ্রুত অনুরোধ{" "}
             <br className="hidden sm:block" />
             পাঠান এবং কয়েক ঘণ্টার মধ্যে আপনার অ্যাপয়েন্টমেন্ট নিশ্চিত করুন।

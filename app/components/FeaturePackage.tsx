@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -94,7 +95,7 @@ export default function FeaturePackage() {
         modules={[Autoplay]}
         spaceBetween={30}
         slidesPerView={1}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        // autoplay={{ delay: 3000, disableOnInteraction: false }}
         pagination={{ clickable: false }}
         breakpoints={{
           640: { slidesPerView: 1 }, // 1 slide on small screens
@@ -106,7 +107,7 @@ export default function FeaturePackage() {
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
             <div
-              className={`flex flex-col lg:flex-row items-center ${slide.bgColor} rounded-lg p-5 shadow-lg`}
+              className={`flex flex-col lg:flex-row ${slide.bgColor} rounded-lg p-5 shadow-lg`}
             >
               {/* Left Content */}
               <div className="text-lef">
@@ -129,11 +130,14 @@ export default function FeaturePackage() {
               </div>
 
               {/* Right Image */}
-              <div className="absolute bottom-0 right-0 top-0">
-                <img
+              <div className="absolute bottom-0 right-0">
+                <Image
                   src={slide.image}
                   alt={slide.title}
-                  className="object-cover w-full h-full pt-5"
+                  width={140}
+                  height={210}
+                  sizes="100vh"
+                  style={{ height: "auto" }}
                 />
               </div>
             </div>

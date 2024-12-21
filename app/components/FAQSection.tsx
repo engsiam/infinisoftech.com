@@ -52,18 +52,20 @@ export default function FAQSection() {
           <Image
             src="/assets/images/faq.png" // Replace with your actual image path
             alt="FAQ"
-            width={625}
-            height={535}
-            className="w-full max-w-sm lg:max-w-full rounded-lg"
+            width={0}
+            height={0}
+            sizes="100vw"
+            style={{ width: "100%", height: "auto" }}
           />
           <div className="-mt-8 flex items-center space-x-4 bg-white shadow-md p-4 rounded-md text-center">
             <div className="">
               <Image
                 src="/assets/images/emoj.png"
                 alt="FAQ"
-                width={625}
-                height={535}
-                className="w-full max-w-sm lg:max-w-full rounded-lg"
+                width={53}
+                height={0}
+                sizes="100vh"
+                style={{ height: "auto" }}
               />
             </div>
             <div className="flex flex-col items-start">
