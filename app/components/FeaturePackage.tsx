@@ -136,6 +136,8 @@ export default function FeaturePackage() {
                   alt={slide.title}
                   width={140}
                   height={210}
+                  // layout="responsive"
+                  loading="lazy"
                   sizes="100vh"
                   style={{ height: "auto" }}
                 />

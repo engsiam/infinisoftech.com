@@ -49,10 +49,13 @@ const HowMediMate = () => {
           <Image
             src="/assets/images/women.png"
             alt="Doctor"
+            layout="responsive"
+            loading="lazy"
             width={350}
             height={0}
             sizes="100vh"
-            style={{ height: "auto" }}
+            // sizes="100vh"
+            // style={{ height: "auto" }}
           />
         </div>
 
