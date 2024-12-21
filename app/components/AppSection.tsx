@@ -13,7 +13,8 @@ export default function AppSection() {
               Working for Your Better Health.
             </h3>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-snug">
-              Download the Medimate App <br /> today!
+              Download the Medimate App <br className="hidden sm:block" />
+              today!
             </h2>
             <p className="text-white text-sm">
               Scan the QR code to get the app now
