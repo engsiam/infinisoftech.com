@@ -3,7 +3,7 @@
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Autoplay} from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function FeaturePackage() {
@@ -77,7 +77,7 @@ export default function FeaturePackage() {
   ];
 
   return (
-    <div className="py-10 max-w-screen-2xl mx-auto">
+    <div className="py-10 max-w-screen-2xl mx-auto px-6 lg:px-8">
       {/* Header Section */}
       <div className="flex justify-between items-center mb-12">
         <div>

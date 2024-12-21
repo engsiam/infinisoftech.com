@@ -8,7 +8,7 @@ import { MdPhoneInTalk } from "react-icons/md";
 export default function Footer() {
   return (
     <footer className="bg-gray-100 py-10">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-18">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-18 space-x-5 md:space-x-11 space-y-12">
         {/* Logo and Description */}
         <div className="col-span-2 lg:col-span-1">
           <Image
@@ -109,20 +109,21 @@ export default function Footer() {
           <h3 className="text-lg font-semibold text-gray-800 mb-4">
             Join Our Newsletter
           </h3>
-          <form className="flex flex-col sm:flex-row items-center">
+          <form className="flex flex-col md:flex-row items-center w-full lg:max-w-xl mx-auto space-y-4 md:space-y-0 md:space-x-0">
             <input
               type="email"
               placeholder="Enter Email"
-              className="flex-1 px-6 h-12 border border-gray-300 rounded-l-md focus:outline-none focus:ring-0 focus:ring-[#C1426D]"
+              className="flex-1 px-4 py-2 border border-gray-300 rounded-md md:rounded-l-md md:rounded-r-none focus:outline-none focus:ring-2 focus:ring-[#C1426D] focus:border-transparent w-full"
             />
             {/* Submit Button */}
             <button
               type="submit"
-              className="px-6 h-12 bg-[#C1426D] text-white font-medium rounded-r-md hover:bg-[#C1426D] focus:outline-none focus:ring-2 focus:ring-[#C1426D] border"
+              className="w-full md:w-auto px-6 py-2 md:h-auto bg-[#C1426D] text-white font-medium rounded-md md:rounded-l-none md:rounded-r-md hover:bg-[#A83256] focus:outline-none focus:ring-2 focus:ring-[#C1426D]"
             >
               Submit
             </button>
           </form>
+
           <div className="flex space-x-4 mt-4">
             {/* Facebook */}
             <a
@@ -161,7 +162,7 @@ export default function Footer() {
 
       {/* Footer Bottom */}
       <div className="border-t mt-8 pt-4 bg-[#F2F6F6]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col sm:flex-row justify-between text-sm text-gray-600">
+        <div className="lg:max-w-7xl mx-auto px-6 lg:px-8 flex flex-col sm:flex-row justify-between text-sm text-gray-600">
           <p>Copyright © 2024 Doccure. All Rights Reserved</p>
           <div className="space-x-4">
             <a href="#" className="hover:text-pink-600">

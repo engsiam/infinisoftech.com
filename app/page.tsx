@@ -4,6 +4,7 @@ import FAQSection from "./components/FAQSection";
 import FeaturePackage from "./components/FeaturePackage";
 import Hero from "./components/Hero";
 import HowMediMate from "./components/HowMediMate";
+import Testimonials from "./components/Testimonials";
 
 export default function Home() {
   return (
@@ -13,7 +14,8 @@ export default function Home() {
       <AboutMedimate />
       <AppSection />
       <FAQSection />
-      <FeaturePackage/>
+      <FeaturePackage />
+      <Testimonials />
       {/* <Services /> */}
     </div>
   );
