@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-"use client"; 
+"use client";
 import { useEffect, useState } from "react";
 
 export default function LoadingWrapper({
@@ -20,7 +20,7 @@ export default function LoadingWrapper({
   return (
     <>
       {isLoading ? (
-        <div className="fixed inset-0 flex items-center justify-center bg-white bg-opacity-90 z-50">
+        <div className="fixed inset-0 flex items-center justify-center bg-primary bg-opacity-90 z-50">
           <div className="flex flex-col items-center">
             <img
               src="/assets/images/logo.png"
