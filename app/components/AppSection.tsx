@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function AppSection() {
   return (
-    <section className="py-16 md:py-24 lg:px-16 px-0">
+    <section className="py-0 md:py-24 lg:px-16 px-0">
       <div className="bg-[#C1426D] md:rounded-lg pt-12 px-4">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-12 px-6 lg:px-0">
           {/* Left Content */}

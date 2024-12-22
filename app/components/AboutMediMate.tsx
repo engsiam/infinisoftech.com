@@ -31,7 +31,7 @@ const featureData = [
 
 export default function AboutMedimate() {
   return (
-    <section className="bg-white py-16 md:py-24">
+    <section className="bg-white mx-auto px-6 lg:px-8 py-10">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* Left Content */}
         <div>
