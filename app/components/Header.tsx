@@ -1,23 +1,23 @@
 "use client";
 
-import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import { useState } from "react";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-pink-500 text-white">
+    <header className="bg-pink-500 text-white sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between py-4 px-4 md:px-8">
         {/* Left Div: Logo */}
         <div className="flex items-center">
-         <Link href="/" >
-         <img
-            src="/assets/images/logo.png" // Update with actual logo path
-            alt="Logo"
-            className="h-10 w-10"
-          />
+          <Link href="/">
+            <img
+              src="/assets/images/logo.png" // Update with actual logo path
+              alt="Logo"
+              className="h-10 w-10"
+            />
           </Link>
         </div>
 

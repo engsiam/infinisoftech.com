@@ -8,7 +8,7 @@ import Testimonials from "./components/Testimonials";
 
 export default function Home() {
   return (
-    <div className="">
+    <>
       <Hero />
       <HowMediMate />
       <AboutMedimate />
@@ -17,6 +17,6 @@ export default function Home() {
       <FeaturePackage />
       <Testimonials />
       {/* <Services /> */}
-    </div>
+    </>
   );
 }
