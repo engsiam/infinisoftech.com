@@ -31,7 +31,7 @@ export default function AppSection() {
               />
             </div>
 
-            {/* App Store Buttons */}
+           
             <div className="flex flex-row justify-center lg:justify-start gap-4">
               <Image
                 src="/assets/images/play.png"
