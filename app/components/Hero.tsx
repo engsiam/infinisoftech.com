@@ -7,7 +7,7 @@ import { PhoneIcon } from "@heroicons/react/24/solid";
 
 export default function HeroSection() {
   return (
-    <section className="bg-pink-100 h-screen flex items-center justify-center">
+    <section className="bg-pink-100 h-screen flex items-center justify-center md:mb-0 mb-20">
       <div className="max-w-7xl mx-auto px-4 md:px-0 grid grid-cols-1 lg:grid-cols-2 gap-10 justify-center">
         {/* Left Content */}
         <div className="flex flex-col justify-center text-center lg:text-left">
@@ -94,5 +94,3 @@ export default function HeroSection() {
     </section>
   );
 }
-
-
