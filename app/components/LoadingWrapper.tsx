@@ -22,12 +22,7 @@ export default function LoadingWrapper({
       {isLoading ? (
         <div className="fixed inset-0 flex items-center justify-center bg-[#D44877] bg-opacity-90 z-50">
           <div className="flex flex-col items-center">
-            <img
-              src="/assets/images/logo.png"
-              alt="Loading Logo"
-              loading="lazy"
-              className="w-20 h-20 animate-pulse mb-4"
-            />
+            <link href="/assets/images/logo.png" as="image" />
             {/* <div className="w-12 h-12 border-4 border-gray-300 border-t-blue-500 rounded-full animate-spin"></div> */}
           </div>
         </div>
