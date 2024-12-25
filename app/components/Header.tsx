@@ -2,13 +2,28 @@
 
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  //detect scrolling
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  });
 
   return (
-    <header className="bg-pink-500 text-white sticky top-0 z-50">
+    <header
+      className={`sticky top-0 w-full z-50 transition-all text-white ${
+        isScrolled ? "bg-primary/90 backdrop-blur-xm" : "bg-primary"
+      } `}
+    >
       <div className="max-w-7xl mx-auto flex items-center justify-between py-4 px-4 md:px-8">
         {/* Left Div: Logo */}
         <div className="flex items-center">
