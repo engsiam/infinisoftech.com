@@ -42,7 +42,7 @@ const cardData = [
 
 const HowMediMate = () => {
   return (
-    <section className="bg-[#FFF0F5] py-16 px-4 md:py-24">
+    <section className="bg-[#FFF0F5] py-16 px-4 md:py-8">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-8 lg:items-end">
         {/* Left Image */}
         <div className="flex justify-center lg:basis-2/5">
@@ -54,7 +54,7 @@ const HowMediMate = () => {
             width={350}
             height={0}
             //sizes="(max-width: 1024px) 100vw, 60vw"
-           sizes="100vh"
+            sizes="100vh"
             // style={{ height: "auto" }}
           />
         </div>

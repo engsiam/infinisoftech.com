@@ -8,11 +8,11 @@ import { MdPhoneInTalk } from "react-icons/md";
 export default function Footer() {
   return (
     <footer className="bg-gray-100 py-10">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-18 lg:space-x-5 md:space-x-0 space-y-12">
+      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-y-12 md:gap-x-6">
         {/* Logo and Description */}
         <div className="col-span-2 lg:col-span-1">
           <Image
-            src="/assets/images/footer-logo.png" // Replace with your logo image path
+            src="/assets/images/footer-logo.png"
             alt="Doccure Logo"
             width={137}
             height={50}
@@ -20,8 +20,8 @@ export default function Footer() {
           />
           <p className="text-sm text-gray-600 leading-relaxed lg:w-60">
             Effortlessly schedule your medical appointments with Doccure.
-            Connect with healthcare professionals, manage appointments &
-            prioritize your well being
+            Connect with healthcare professionals, manage appointments & 
+            prioritize your well being.
           </p>
         </div>
 
@@ -47,11 +47,9 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Specialities Links */}
-        <div>
-          <h3 className="text-lg font-semibold text-gray-800 mb-4">
-            Specialities
-          </h3>
+        {/* Specialities Links with md:ml-6 */}
+        <div className="md:ml-6 ml-0">
+          <h3 className="text-lg font-semibold text-gray-800 mb-4">Specialities</h3>
           <ul className="space-y-2 text-sm text-gray-600">
             <li>
               <a href="#" className="hover:text-pink-600">
@@ -73,9 +71,7 @@ export default function Footer() {
 
         {/* Contact Information */}
         <div>
-          <h3 className="text-lg font-semibold text-gray-800 mb-4">
-            Contact Us
-          </h3>
+          <h3 className="text-lg font-semibold text-gray-800 mb-4">Contact Us</h3>
           <ul className="space-y-2 text-sm text-gray-600">
             <li>
               <span className="flex items-start gap-2">
@@ -109,13 +105,12 @@ export default function Footer() {
           <h3 className="text-lg font-semibold text-gray-800 mb-4">
             Join Our Newsletter
           </h3>
-          <form className="flex flex-col md:flex-row items-center w-full lg:max-w-xl mx-auto space-y-4 md:space-y-0 md:space-x-0">
+          <form className="flex flex-col md:flex-row items-center w-full lg:max-w-xl mx-auto space-y-4 md:space-y-0">
             <input
               type="email"
               placeholder="Enter Email"
               className="flex-1 px-4 py-2 border border-gray-300 rounded-md md:rounded-l-md md:rounded-r-none focus:outline-none focus:ring-2 focus:ring-[#C1426D] focus:border-transparent w-full"
             />
-            {/* Submit Button */}
             <button
               type="submit"
               className="w-full md:w-auto px-6 py-2 md:h-auto bg-[#C1426D] text-white font-medium rounded-md md:rounded-l-none md:rounded-r-md hover:bg-[#A83256] focus:outline-none focus:ring-2 focus:ring-[#C1426D]"
@@ -125,31 +120,24 @@ export default function Footer() {
           </form>
 
           <div className="flex space-x-4 mt-4">
-            {/* Facebook */}
             <a
               href="#"
               className="bg-gray-200 w-10 h-10 flex items-center justify-center rounded-full text-gray-800 hover:bg-black hover:text-white transition"
             >
               <FaFacebook fontSize={20} />
             </a>
-
-            {/* Instagram */}
             <a
               href="#"
               className="bg-gray-200 w-10 h-10 flex items-center justify-center rounded-full text-gray-800 hover:bg-black hover:text-white transition"
             >
               <FaInstagram fontSize={20} />
             </a>
-
-            {/* Twitter */}
             <a
               href="#"
               className="bg-gray-200 w-10 h-10 flex items-center justify-center rounded-full text-gray-800 hover:bg-black hover:text-white transition"
             >
               <FaTwitter fontSize={20} />
             </a>
-
-            {/* LinkedIn */}
             <a
               href="#"
               className="bg-gray-200 w-10 h-10 flex items-center justify-center rounded-full text-gray-800 hover:bg-black hover:text-white transition"
