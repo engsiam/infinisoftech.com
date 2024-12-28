@@ -43,9 +43,9 @@ const cardData = [
 const HowMediMate = () => {
   return (
     <section className="bg-[#FFF0F5] py-16 px-4 md:py-24">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-8">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-8 lg:items-end">
         {/* Left Image */}
-        <div className="w-auto flex justify-center lg:justify-start">
+        <div className="flex justify-center lg:basis-2/5">
           <Image
             src="/assets/images/women.png"
             alt="Doctor"
@@ -53,14 +53,14 @@ const HowMediMate = () => {
             loading="lazy"
             width={350}
             height={0}
-            sizes="100vh"
-            // sizes="100vh"
+            //sizes="(max-width: 1024px) 100vw, 60vw"
+           sizes="100vh"
             // style={{ height: "auto" }}
           />
         </div>
 
         {/* Right Content */}
-        <div className="flex flex-col text-center lg:text-left w-full">
+        <div className="flex flex-col text-left lg:basis-3/5">
           {/* Heading */}
           <div className="mb-6 p-4">
             <p className="text-pink-600 text-sm mb-2">
