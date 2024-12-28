@@ -47,7 +47,7 @@ export default function AboutMedimate() {
           <div className="space-y-6">
             {featureData.map((feature) => (
               <div key={feature.id}>
-                <h3 className="text-lg font-semibold text-gray-800 mb-1">
+                <h3 className="text-md md:text-lg font-semibold text-gray-800 mb-1">
                   {feature.title}
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed">

@@ -12,7 +12,7 @@ export default function AppSection() {
             <h3 className="text-white text-xl font-medium">
               Working for Your Better Health.
             </h3>
-            <h2 className="text-3xl md:text-4xl font-bold text-white leading-snug">
+            <h2 className="text-2xl md:text-4xl font-bold text-white leading-snug">
               Download the Medimate App <br className="hidden sm:block" />
               today!
             </h2>

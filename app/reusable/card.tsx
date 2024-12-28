@@ -13,7 +13,7 @@ const Card: React.FC<CardProps> = ({ icon, title, description }) => {
         {icon}
       </div>
       <div className="flex flex-col">
-        <h3 className="text-lg font-semibold text-gray-800 mb-1">{title}</h3>
+        <h3 className="text-md md:text-lg font-semibold text-gray-800 mb-1">{title}</h3>
         <p className="text-gray-600 text-sm">{description}</p>
       </div>
     </div>
