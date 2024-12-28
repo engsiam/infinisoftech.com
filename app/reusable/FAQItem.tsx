@@ -22,7 +22,7 @@ const FAQItem = ({ question, answer, defaultOpen }: FAQItemProps) => {
         className="flex justify-between items-center w-full text-left focus:outline-none"
         aria-expanded={isOpen}
       >
-        <h3 className="text-gray-800 font-semibold text-base">{question}</h3>
+        <h3 className="text-gray-800 font-semibold text-sm md:text-base">{question}</h3>
         <span
           className={`w-6 h-6 flex items-center justify-center rounded-full ${
             isOpen ? "bg-blue-500 text-white" : "bg-gray-200 text-blue-500"
