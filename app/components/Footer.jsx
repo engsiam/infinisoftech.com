@@ -150,7 +150,7 @@ export default function Footer() {
 
       {/* Footer Bottom */}
       <div className="border-t mt-8 pt-4 bg-[#F2F6F6]">
-        <div className="lg:max-w-7xl mx-auto px-6 lg:px-8 flex flex-col sm:flex-row justify-between text-sm text-gray-600">
+        <div className="lg:max-w-7xl mx-auto px-6 lg:px-8 flex flex-col sm:flex-row justify-between text-gray-600">
           <p>Copyright © 2024 Doccure. All Rights Reserved</p>
           <div className="space-x-4">
             <a href="#" className="hover:text-pink-600">
