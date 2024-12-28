@@ -31,7 +31,7 @@ export default function Testimonials() {
   ];
 
   return (
-    <div className="py-10 bg-[#F5F5F540]  px-6 lg:px-8">
+    <div className="bg-[#F5F5F540]  py-16 px-4 lg:py-20">
       {/* Swiper Slider */}
       <Swiper
         modules={[Autoplay]}

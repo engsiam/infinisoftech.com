@@ -7,7 +7,7 @@ import { MdPhoneInTalk } from "react-icons/md";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-100 py-10">
+    <footer className="bg-gray-100 py-16 px-4 lg:py-20">
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-y-12 md:gap-x-6">
         {/* Logo and Description */}
         <div className="col-span-2 lg:col-span-1">

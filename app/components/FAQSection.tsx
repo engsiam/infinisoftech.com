@@ -34,7 +34,7 @@ const faqs = [
 
 export default function FAQSection() {
   return (
-    <section className="max-w-7xl mx-auto py-8 px-4 md:py-8">
+    <section className="max-w-7xl mx-auto py-16 px-4 lg:py-20">
       {/* Header Section */}
       <div className="flex justify-between items-center mb-12">
         <div>
@@ -52,10 +52,10 @@ export default function FAQSection() {
           <Image
             src="/assets/images/faq.png" // Replace with your actual image path
             alt="FAQ"
-            width={0}
+            width={600}
             height={0}
-            sizes="100vw"
-            style={{ width: "100%", height: "auto" }}
+            //sizes="100vw"
+            style={{ height: "auto" }}
           />
           <div className="-mt-8 flex items-center space-x-4 bg-white shadow-md p-4 rounded-md text-center">
             <div className="">

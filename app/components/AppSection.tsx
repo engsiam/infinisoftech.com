@@ -56,9 +56,9 @@ export default function AppSection() {
               <Image
                 src="/assets/images/mobile-app.png"
                 alt="App Screen 1"
-                width={565}
+                width={500}
                 height={0}
-                sizes="100vw"
+               // sizes="100vw"
                 style={{ height: "auto" }}
               />
             </div>

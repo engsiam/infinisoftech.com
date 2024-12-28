@@ -31,7 +31,7 @@ const featureData = [
 
 export default function AboutMedimate() {
   return (
-    <section className="bg-white mx-auto py-8 px-4 md:py-8">
+    <section className="bg-white mx-auto py-16 px-4 lg:py-20">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* Left Content */}
         <div>
@@ -63,10 +63,10 @@ export default function AboutMedimate() {
           <Image
             src="/assets/images/about.jpg"
             alt="About Medimate"
-            width={530}
+            width={450}
             height={0}
             //sizes="100vh"
-            sizes="(max-width: 1024px) 100vw, 60vw"
+            style={{ height: "auto" }}
           />
         </div>
       </div>
