@@ -34,7 +34,7 @@ const faqs = [
 
 export default function FAQSection() {
   return (
-    <section className="max-w-7xl mx-auto py-16 px-4 md:py-24">
+    <section className="max-w-7xl mx-auto py-8 px-4 md:py-24">
       {/* Header Section */}
       <div className="flex justify-between items-center mb-12">
         <div>

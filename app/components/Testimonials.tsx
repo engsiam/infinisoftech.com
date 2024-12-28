@@ -49,7 +49,7 @@ export default function Testimonials() {
               </div>
 
               {/* Testimonial Content */}
-              <div className="mt-6 lg:mt-0 lg:ml-8">
+              <div className="mt-6 lg:mt-0 lg:ml-8 text-left">
                 <div className="text-left">
                   {/* Header */}
                   <h2 className="text-blue-600 text-sm font-semibold uppercase mb-2">
