@@ -63,10 +63,11 @@ export default function AboutMedimate() {
           <Image
             src="/assets/images/about.jpg"
             alt="About Medimate"
-            width={0}
+            width={530}
             height={0}
-            sizes="100vw"
-            style={{ width: "100%", height: "auto" }}
+          //sizes="100vh"
+          sizes="(max-width: 1024px) 100vw, 60vw"
+            
           />
         </div>
       </div>

@@ -78,7 +78,7 @@ export default function FeaturePackage() {
   ];
 
   return (
-    <div className="py-10 max-w-screen-2xl mx-auto px-6 lg:px-8">
+    <div className="max-w-7xl mx-auto py-16 px-4 md:py-24">
       {/* Header Section */}
       <div className="flex justify-between items-center mb-12">
         <div>

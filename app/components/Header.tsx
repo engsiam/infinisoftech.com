@@ -80,7 +80,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <nav className="md:hidden bg-pink-600">
+        <nav className="md:hidden bg-primary">
           <ul className="space-y-4 py-4 px-4">
             <li>
               <a href="/doctors" className="block hover:underline">
