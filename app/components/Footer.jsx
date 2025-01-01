@@ -6,6 +6,7 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { MdPhoneInTalk } from "react-icons/md";
 
 export default function Footer() {
+  let date = new Date().getFullYear();
   return (
     <footer className="bg-gray-100 py-16 px-4 lg:py-20">
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-y-12 md:gap-x-6">
@@ -151,7 +152,7 @@ export default function Footer() {
       {/* Footer Bottom */}
       <div className="border-t mt-8 pt-4 bg-[#F2F6F6]">
         <div className="lg:max-w-7xl mx-auto px-6 lg:px-8 flex flex-col sm:flex-row justify-between text-gray-600">
-          <p>Copyright © 2024 Doccure. All Rights Reserved</p>
+          <p>Copyright © {date} Doccure. All Rights Reserved</p>
           <div className="space-x-4">
             <a href="#" className="hover:text-pink-600">
               Privacy Policy
